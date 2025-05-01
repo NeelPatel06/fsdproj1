@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards - Versatile Website Template</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="light-mode">
+    <header>
+        <div class="logo">
+            <h1>LOGO</h1>
+        </div>
+        <nav>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="cards.html" class="active">Solutions</a></li>
+            </ul>
+        </nav>
+        <div class="nav-btns">
+            <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+            <a href="login.html" class="login-btn">Login</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <h1>Solutions & Use Cases</h1>
+            <p>Versatile card components that can be adapted for any website</p>
+        </section>
+
+        <!-- Filter Section -->
+        <section class="filter-section">
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="product">Products</button>
+                <button class="filter-btn" data-filter="service">Services</button>
+                <button class="filter-btn" data-filter="team">Team</button>
+                <button class="filter-btn" data-filter="pricing">Pricing</button>
+            </div>
+            <div class="search-container">
+                <input type="text" id="card-search" placeholder="Search...">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+        </section>
+
+        <!-- Product Cards -->
+        <section class="card-section scroll-reveal">
+            <h2>Product Cards</h2>
+            <div class="cards-container">
+                <div class="card product" data-category="product">
+                    <div class="card-image">
+                        <img src="/api/placeholder/300/200" alt="Product 1">
+                        <div class="card-badge">New</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Product Name</h3>
+                        <p class="card-description">Short description of the product and its features.</p>
+                        <div class="card-price">
+                            <span class="price">$99.99</span>
+                            <span class="old-price">$129.99</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn secondary-btn">Add to Cart</button>
+                            <button class="btn outline-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card product" data-category="product">
+                    <div class="card-image">
+                        <img src="/api/placeholder/300/200" alt="Product 2">
+                    </div>
+                    <div class="card-content">
+                        <h3>Product Name</h3>
+                        <p class="card-description">Short description of the product and its features.</p>
+                        <div class="card-price">
+                            <span class="price">$79.99</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn secondary-btn">Add to Cart</button>
+                            <button class="btn outline-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Cards -->
+        <section class="card-section scroll-reveal">
+            <h2>Service Cards</h2>
+            <div class="cards-container">
+                <div class="card service" data-category="service">
+                    <div class="card-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Web Development</h3>
+                        <p class="card-description">Professional web development services for your business needs.</p>
+                        <div class="card-actions">
+                            <a href="#" class="btn text-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card service" data-category="service">
+                    <div class="card-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>SEO Optimization</h3>
+                        <p class="card-description">Improve your website's visibility with our SEO services.</p>
+                        <div class="card-actions">
+                            <a href="#" class="btn text-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Cards -->
+        <section class="card-section scroll-reveal">
+            <h2>Team Cards</h2>
+            <div class="cards-container">
+                <div class="card team" data-category="team">
+                    <div class="card-image">
+                        <img src="/api/placeholder/300/300" alt="Team Member 1">
+                    </div>
+                    <div class="card-content">
+                        <h3>John Doe</h3>
+                        <p class="card-subtitle">CEO & Founder</p>
+                        <p class="card-description">Short bio about the team member and their expertise.</p>
+                        <div class="card-social">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card team" data-category="team">
+                    <div class="card-image">
+                        <img src="/api/placeholder/300/300" alt="Team Member 2">
+                    </div>
+                    <div class="card-content">
+                        <h3>Jane Smith</h3>
+                        <p class="card-subtitle">Lead Designer</p>
+                        <p class="card-description">Short bio about the team member and their expertise.</p>
+                        <div class="card-social">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Cards -->
+        <section class="card-section scroll-reveal">
+            <h2>Pricing Cards</h2>
+            <div class="cards-container">
+                <div class="card pricing" data-category="pricing">
+                    <div class="card-header">
+                        <h3>Basic</h3>
+                        <div class="card-price">
+                            <span class="currency">$</span>
+                            <span class="amount">19</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Feature 1</li>
+                            <li><i class="fas fa-check"></i> Feature 2</li>
+                            <li><i class="fas fa-times"></i> Feature 3</li>
+                            <li><i class="fas fa-times"></i> Feature 4</li>
+                        </ul>
+                        <div class="card-actions">
+                            <button class="btn primary-btn">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card pricing featured" data-category="pricing">
+                    <div class="card-badge">Popular</div>
+                    <div class="card-header">
+                        <h3>Premium</h3>
+                        <div class="card-price">
+                            <span class="currency">$</span>
+                            <span class="amount">49</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Feature 1</li>
+                            <li><i class="fas fa-check"></i> Feature 2</li>
+                            <li><i class="fas fa-check"></i> Feature 3</li>
+                            <li><i class="fas fa-check"></i> Feature 4</li>
+                        </ul>
+                        <div class="card-actions">
+                            <button class="btn primary-btn">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>LOGO</h2>
+                <p>A versatile website template</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#features">Features</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Versatile Template. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
